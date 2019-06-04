@@ -15,7 +15,6 @@ box_text_simp_int_inf_num = StringVar()
 box_text_simp_int_sup_num = StringVar()
 box_text_simp_init_num = StringVar()
 box_text_simp_func_num = StringVar()
-box_text_simp_result_num = StringVar()
 
 #mainFrame = La ventana principal
 
@@ -103,9 +102,14 @@ def box_text_simp_func_get():
 
 #button_simp = Boton para resolver
 
-button_simp=Button(simpFrame, text="Resolver", command=(box_text_simp_int_inf_get, box_text_simp_int_sup_get, box_text_simp_init_get, box_text_simp_func_get))
+button_simp=Button(simpFrame, text="Resolver")
 button_simp.config(fg="#FFFFFF", bg="#4c4c4c", font=("Verdana", 15))
 button_simp.grid(row=5, column=0, pady=10)
+
+#box_text_simp_ans = Caja cinco
+
+box_text_simp_ans = Entry(simpFrame, text="")
+box_text_simp_ans.grid(row=5, column=1)
 
 #----------------Simpson 1/3------------------
 

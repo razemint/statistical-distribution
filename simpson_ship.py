@@ -23,3 +23,4 @@ def simpson13(n, a, b, f):
 
 def fx(x, f):
     return eval(f)
+
