@@ -1,3 +1,4 @@
+import numpy as np
 from cal.simpson import simpson13, fx
 
 n = int(input("inserta el número de iteraciones\n"))

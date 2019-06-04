@@ -19,6 +19,7 @@ def simpson13(n, a, b, f):
     rest = suma * (h / 3)
 
     return (rest)
+    return print("el emú")
 
 
 def fx(x, f):
