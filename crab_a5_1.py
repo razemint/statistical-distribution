@@ -7,6 +7,10 @@ def buttonSimpPress():
   simpCommand = '\"\"inicio.py"\"'
   os.system(simpCommand)
 
+def buttonNormPress():
+  normCommand = '\"\"cal\\normal.py"\"'
+  os.system(normCommand)
+
 #border = El borde de la pantalla, orillas y todo
 
 border = Tk()
@@ -54,10 +58,58 @@ box_text_simp_label.config(fg="#FFFFFF", bg="#4c4c4c", font=("Verdana", 18))
 
 #button_simp = Boton para resolver
 
-button_simp=Button(simpFrame, text="Resolver", command=buttonSimpPress)
+button_simp=Button(simpFrame, text="Introducir Valores", command=buttonSimpPress)
 button_simp.config(fg="#FFFFFF", bg="#4c4c4c", font=("Verdana", 15))
 button_simp.grid(row=1, column=0, pady=10)
 
 #----------------Simpson 1/3------------------
+
+#------------Distribución normal--------------
+
+#box_text_norm_label = "Distribución Normal"
+
+box_text_norm_label = Label(simpFrame, text="Metodo de Distribución Normal")
+box_text_norm_label.grid(row=2, column=0)
+box_text_norm_label.config(fg="#FFFFFF", bg="#4c4c4c", font=("Verdana", 18))
+
+#button_norm = Boton para resolver
+
+button_norm=Button(simpFrame, text="Introducir Valores", command=buttonNormPress)
+button_norm.config(fg="#FFFFFF", bg="#4c4c4c", font=("Verdana", 15))
+button_norm.grid(row=3, column=0, pady=10)
+
+#------------Distribución normal--------------
+
+#-----------------Varianza--------------------
+
+#box_text_norm_label = "Distribución Normal"
+
+box_text_vari_label = Label(simpFrame, text="Varianza")
+box_text_vari_label.grid(row=4, column=0)
+box_text_vari_label.config(fg="#FFFFFF", bg="#4c4c4c", font=("Verdana", 18))
+
+#button_norm = Boton para resolver
+
+button_vari=Button(simpFrame, text="Introducir Valores", command=buttonNormPress)
+button_vari.config(fg="#FFFFFF", bg="#4c4c4c", font=("Verdana", 15))
+button_vari.grid(row=5, column=0, pady=10)
+
+#-----------------Varianza--------------------
+
+#--------------Valor Esperado-----------------
+
+#box_text_norm_label = "Distribución Normal"
+
+box_text_exp_label = Label(simpFrame, text="Valor Esperado")
+box_text_exp_label.grid(row=6, column=0)
+box_text_exp_label.config(fg="#FFFFFF", bg="#4c4c4c", font=("Verdana", 18))
+
+#button_norm = Boton para resolver
+
+button_exp=Button(simpFrame, text="Introducir Valores", command=buttonNormPress)
+button_exp.config(fg="#FFFFFF", bg="#4c4c4c", font=("Verdana", 15))
+button_exp.grid(row=7, column=0, pady=10)
+
+#--------------Valor Esperado-----------------
 
 border.mainloop()
